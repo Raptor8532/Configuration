@@ -5,7 +5,6 @@ WORKDIR /app
 #COPY package*.json  /app/
 COPY ./ /app/
 RUN npm install -g npm@8.5.5
-RUN npm install -g @angular/cli
 RUN npm ci
 RUN npm run build
 
